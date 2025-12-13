@@ -125,13 +125,3 @@ function somarNumeros() {
 
     alert("Soma: " + soma + "\nMédia: " + media);
 }
-
-function exemploWhile() {
-    let indice = 0;
-    while (indice < 3) {
-        let nome = prompt("Digite o nome");
-        indice = indice + 1;
-    }
-
-    alert("obrigado");
-}
