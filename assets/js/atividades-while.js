@@ -33,8 +33,10 @@ function exercicio03() {
     indice = 0;
     
     while (indice < 3) {
+        // loop que pega nome de cidades e cadastra para planejamento de viagem
         let nomeCidade = prompt("Digite o nome da cidade que você quer visitar");
 
+        // utiliza o índice como contador para as cidades
         alert("Destino " + (indice + 1) + ": " + nomeCidade);
 
         indice = indice + 1;
@@ -45,17 +47,21 @@ function exercicio03() {
 
 function exercicio04() {
     indice = 0;
+    // soma zerada fora da função para poder ser puxada posteriormente
     soma = 0;
 
     while (indice < 5) {
+        // loop que pega 5 números inteiros e soma eles 
         let numeros = parseInt(prompt("Digite 5 números inteiros"));
         soma = soma + numeros;
 
+        // novamente uso do índice como contador
         alert("Número " + (indice + 1) + ": " + numeros)
 
         indice = indice + 1;
     }
 
+    // impressão da soma
     alert("Soma total: " + soma)
 }
 
@@ -63,9 +69,11 @@ function exercicio05() {
     indice = 0;
 
     while (indice < 3) {
+        // loop que pega o nome e ano dos filmes
         let filmeNome = prompt("Digite o nome do filme");
         let filmeAno = parseInt(prompt("Digite o ano de lançamento do filme"));
 
+        // impressão do nome e ano dos filmes
         alert("Filme: " + filmeNome + "\nAno: " + filmeAno);
 
         indice = indice + 1;
