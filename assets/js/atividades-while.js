@@ -134,15 +134,17 @@ function exercicio08() {
     }
 }
 
-//9. Criar uma função exercicio09()
-//- Solicitar um número para o usuário
-//- Apresentar a tabuada desse número utilizando while
-//- Formato esperado:
-//- 5 x 1 = 5
-//- 5 x 2 = 10
-//- ...
-//- 5 x 10 = 50
-//- O número(5) apresentado foi digitado pelo usuário, ou seja, deve apresentar a tabuada do número digitado
+function exercicio09() {
+    let indice = 1;
+    //- Solicitar um número para o usuário
+    let numero = parseInt(prompt("Insira um número"));
+    //- Apresentar a tabuada desse número utilizando while
+    while (indice<=10) {
+        alert(numero + " x " + indice + " = " + numero * indice);
+
+        indice = indice + 1;
+    }
+}
 
 //10. Criar uma função exercicio10()
 //- Solicitar 10 números
