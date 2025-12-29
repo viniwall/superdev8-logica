@@ -146,10 +146,78 @@ function exercicio09() {
     }
 }
 
-//10. Criar uma função exercicio10()
-//- Solicitar 10 números
-//- Apresentar a quantidade de números pares
-//- Apresentar a quantidade de números ímpares
+function exercicio10() {
+    indice = 0;
+    numeroParQuant = 0;
+    numeroImparQuant = 0;
+    //- Solicitar 10 números
+    let numero1 = parseInt(prompt("Digite o 1° número"))
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+    if (numero1 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
+    let numero2 = parseInt(prompt("Digite o 2° número"))
+    let numero3 = parseInt(prompt("Digite o 3° número"))
+    let numero4 = parseInt(prompt("Digite o 4° número"))
+    let numero5 = parseInt(prompt("Digite o 5° número"))
+    let numero6 = parseInt(prompt("Digite o 6° número"))
+    let numero7 = parseInt(prompt("Digite o 7° número"))
+    let numero8 = parseInt(prompt("Digite o 8° número"))
+    let numero9 = parseInt(prompt("Digite o 9° número"))
+    let numero10 = parseInt(prompt("Digite o 10° número"))
+    //- Apresentar a quantidade de números pares
+
+    //- Apresentar a quantidade de números ímpares
+
+}
 
 //11. Criar uma função exercicio11()
 //- Solicitar 4 notas de um aluno utilizando enquanto
