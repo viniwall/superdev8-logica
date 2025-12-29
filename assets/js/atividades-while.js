@@ -124,12 +124,12 @@ function exercicio08() {
     while (indice < 10) {
         indice = indice + 1;
         let numero = parseInt(prompt("Digite o número"));
-        //- Apresentar se o número é par
-        if (numero/2 === ) {
-            alert("O número: " + numero + "é par");
+        //- Apresentar se o número é par, usando o % para conferir o módulo (resto) da divisão
+        if (numero % 2 == 0) {
+            alert("O número: " + numero + " é par");
         } else {
-            //- Apresentar se o número é ímpar
-            alert("O número: " + numero + "é ímpar");
+            // se o módulo for 1 o número é ímpar
+            alert("O número: " + numero + " é ímpar");
         }
     }
 }
