@@ -150,88 +150,126 @@ function exercicio10() {
     indice = 0;
     numeroParQuant = 0;
     numeroImparQuant = 0;
+
     //- Solicitar 10 números
     let numero1 = parseInt(prompt("Digite o 1° número"))
     if (numero1 % 2 == 1) {
         numeroParQuant = numeroParQuant + 1;
-    } else {
+    } else if (numero1 % 2 == 0) {
         numeroImparQuant = numeroImparQuant + 1;
     }
     
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-    if (numero1 % 2 == 1) {
-        numeroParQuant = numeroParQuant + 1;
-    } else {
-        numeroImparQuant = numeroImparQuant + 1;
-    }
-
     let numero2 = parseInt(prompt("Digite o 2° número"))
+    if (numero2 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero2 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero3 = parseInt(prompt("Digite o 3° número"))
+    if (numero3 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero3 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero4 = parseInt(prompt("Digite o 4° número"))
+    if (numero4 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero4 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero5 = parseInt(prompt("Digite o 5° número"))
+    if (numero5 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero5 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero6 = parseInt(prompt("Digite o 6° número"))
+    if (numero6 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero6 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero7 = parseInt(prompt("Digite o 7° número"))
+    if (numero7 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero7 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero8 = parseInt(prompt("Digite o 8° número"))
+    if (numero8 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero8 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero9 = parseInt(prompt("Digite o 9° número"))
+    if (numero9 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero9 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
+
     let numero10 = parseInt(prompt("Digite o 10° número"))
-    //- Apresentar a quantidade de números pares
+    if (numero10 % 2 == 1) {
+        numeroParQuant = numeroParQuant + 1;
+    } else if (numero10 % 2 == 0) {
+        numeroImparQuant = numeroImparQuant + 1;
+    }
 
-    //- Apresentar a quantidade de números ímpares
-
+    //- Apresentar a quantidade de números pares e ímpares
+    alert("Quantidade de números pares: "+numeroParQuant+"\nQuantidade de números ímpares: "+numeroImparQuant);
 }
 
-//11. Criar uma função exercicio11()
-//- Solicitar 4 notas de um aluno utilizando enquanto
-//- Calcular a média das notas
-//- Apresentar a média
-//- Se a média for maior ou igual a 7 apresentar Aprovado
-//- Senão apresentar Reprovado
+function exercicio11() {
+        let indice = 0;
+        let notas = 0;
 
-//12. Criar uma função exercicio12()
-//- Solicitar o valor de 5 produtos utilizando enquanto
-//- Calcular o total da compra
-//- Se o total for maior que 200 aplicar 10% de desconto
-//- Apresentar o valor total sem desconto
-//- Apresentar o valor final com desconto (se houver)
+    //- Solicitar 4 notas de um aluno utilizando enquanto
+    while (indice <= 4) {
+        indice = indice + 1;
+        let notasValor = parseFloat(prompt("Digite as nota do aluno"));
+        notas = notas + notasValor; 
+    }
+
+    //- Calcular a média das notas
+    let media = notas / indice;
+
+    //- Apresentar a média
+    if (media >= 7){
+        //- Se a média for maior ou igual a 7 apresentar Aprovado
+        alert("Aluno aprovado!")
+    } else {
+        //- Senão apresentar Reprovado
+        alert("Aluno reprovado!")
+    }
+    
+}
+
+function exercicio12() {
+    let indice = 0;
+    let produtos = 0;
+    //- Solicitar o valor de 5 produtos utilizando enquanto
+    while (indice <= 4) {
+        indice = indice + 1;
+        let produtosValor = parseFloat(prompt("Insira o valor de 5 produtos"));
+        //- Calcular o total da compra
+        produtos = produtos + produtosValor;
+    }
+    
+    //- Se o total for maior que 200 aplicar 10% de desconto
+    if (produtos<=200) {
+        //- Apresentar o valor total com e sem desconto
+        alert("valor total do produto (sem desconto): "+ produtos+ "\nvalor total da compra (com desconto)" + produtos*0.1)
+
+    }
+
+}
 
 //13. Criar uma função exercicio13()
 //- Solicitar 6 idades utilizando enquanto
