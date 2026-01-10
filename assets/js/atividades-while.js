@@ -231,7 +231,7 @@ function exercicio11() {
         let notas = 0;
 
     //- Solicitar 4 notas de um aluno utilizando enquanto
-    while (indice <= 4) {
+    while (indice < 4) {
         indice = indice + 1;
         let notasValor = parseFloat(prompt("Digite as nota do aluno"));
         notas = notas + notasValor; 
@@ -255,7 +255,7 @@ function exercicio12() {
     let indice = 0;
     let produtos = 0;
     //- Solicitar o valor de 5 produtos utilizando enquanto
-    while (indice <= 4) {
+    while (indice < 4) {
         indice = indice + 1;
         let produtosValor = parseFloat(prompt("Insira o valor de 5 produtos"));
         //- Calcular o total da compra
@@ -265,34 +265,99 @@ function exercicio12() {
     //- Se o total for maior que 200 aplicar 10% de desconto
     if (produtos<=200) {
         //- Apresentar o valor total com e sem desconto
-        alert("valor total do produto (sem desconto): "+ produtos+ "\nvalor total da compra (com desconto)" + produtos*0.1)
+        alert("valor total do produto (sem desconto): "+ produtos+ "\nvalor total da compra (com desconto)" + (produtos + (produtos*0.1)))
 
     }
 
 }
 
-//13. Criar uma função exercicio13()
-//- Solicitar 6 idades utilizando enquanto
-//- Calcular a média das idades
-//- Apresentar a média das idades
-//- Se a média for maior ou igual a 18 apresentar Maior de idade
-//- Senão apresentar Menor de idade
+function exercicio13() {
+    let indice = 0;
+    let idades = 0;
+    //- Solicitar 6 idades utilizando enquanto
+    while (indice < 6) {
+        indice = indice + 1;
+        let idadesValor = parseInt(prompt("Digite 6 idades"));
+        idades = idades + idadesValor;
+    }
 
-//14. Criar uma função exercicio14()
-//- Solicitar 5 salários utilizando enquanto
-//- Calcular o maior salário informado
-//- Calcular o menor salário informado
-//- Calcular a média dos salários
-//- Se a média for maior que 3000 apresentar mensagem Salários acima da média
-//- Senão apresentar mensagem Salários dentro da média
+    //- Calcular a média das idades
+    let media = idades / 6;
 
-//15. Criar uma função exercicio15()
-//- Solicitar 4 valores de contas (água, luz, internet, aluguel) utilizando enquanto
-//- Calcular o total das contas
-//- Solicitar a renda mensal do usuário
-//- Se o total das contas for maior que 50% da renda apresentar mensagem Orçamento comprometido
-//- Senão apresentar mensagem Orçamento saudável
-//- Apresentar o total das contas e o percentual que representa da renda
+    //- Apresentar a média das idades, se a média for maior ou igual a 18 apresentar Maior de idade 
+    // senão apresentar Menor de idade
+    if (media >= 18) {
+        alert("Maior de idade!");
+    } else if (media < 18) {
+        alert("Menor de idade!");
+    } else {
+        alert("Media inválida! (insira valores a partir de 0)")
+    }
+
+}
+
+function exercicio14() {
+    let indice = 0;
+    let salarios = 0;
+    let menorSalario = 999999999;
+    let maiorSalario = 0;
+
+    //- Solicitar 5 salários utilizando enquanto
+    while (indice < 5) {
+        indice = indice + 1;
+        let salariosValor = parseFloat(prompt("Digite 5 salarios"));
+        salarios = salarios + salariosValor;
+        //- Calcular o maior salário informado
+        if (salariosValor > maiorSalario) {
+            maiorSalario = salariosValor;
+        } 
+        //- Calcular o menor salário informado
+        if (salariosValor < menorSalario) {
+            menorSalario = salariosValor;
+        }
+    }
+    //- Calcular a média dos salários
+    let media = salarios / 5;
+    //- Se a média for maior que 3000 apresentar mensagem Salários acima da média
+    if (media > 3000) {
+        alert("Salarios acima da média! \nMaior salário digitado: " + maiorSalario + "\nmenor salário digitado: " + menorSalario)
+    } 
+    else if (media <= 3000) {
+        // senão apresentar mensagem Salários dentro da média
+        alert("Salarios dentro da média! \nMaior salário digitado: " + maiorSalario + "\nmenor salário digitado: " + menorSalario)
+    } else {
+        alert("Valores inválidos (insira valores a partir de 0)")
+    }
+
+}
+
+function exercicio15 () {
+    let indice = 0;
+    let contas = 0;
+    let contasValor = 0;
+    //- Solicitar 4 valores de contas (água, luz, internet, aluguel) utilizando enquanto
+    while (indice < 4) {
+        indice = indice + 1;
+        if (indice = 1) {
+            contasValor = parseFloat(prompt("Insira sua conta de água"));
+            contas = contas + contasValor;
+        } else if (indice = 2) {
+            contasValor = parseFloat(prompt("Insira sua conta de luz"));
+            contas = contas + contasValor;
+        } else if (indice = 3) {
+            contas = contas + contasValor;
+            contasValor = parseFloat(prompt("Insira sua conta de internet"));
+        } else if (indice = 4) {
+            contas = contas + contasValor;
+            contasValor = parseFloat(prompt("Insira seu aluguel"));
+        }
+    }
+    //- Calcular o total das contas
+    //- Solicitar a renda mensal do usuário
+    //- Se o total das contas for maior que 50% da renda apresentar mensagem Orçamento comprometido
+    //- Senão apresentar mensagem Orçamento saudável
+    //- Apresentar o total das contas e o percentual que representa da renda
+}
 
 //16. Criar uma função exercicio16()
 //- Solicitar a altura de 5 pessoas
