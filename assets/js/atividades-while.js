@@ -412,21 +412,82 @@ function exercicio17() {
     let menorPeso = 0;
     //- Solicitar o peso de 4 pessoas
     let peso1 = parseFloat(prompt("Digite o primeiro peso:"));
+    menorPeso = peso1;
+    let peso2 = parseFloat(prompt("Digite o segundo peso:"));
+    let peso3 = parseFloat(prompt("Digite o terceiro peso:"));
+    let peso4 = parseFloat(prompt("Digite o quarto peso:"));
     //- Descobrir e armazenar o menor peso utilizando while
+    while (menorPeso == peso1) {
+        if (menorPeso > peso2) {
+            menorPeso = peso2;
+        }
+        if (menorPeso > peso3) {
+            menorPeso = peso3;
+        }
+        if (menorPeso > peso4) {
+            menorPeso = peso4;
+        }
+    } 
     //- Apresentar o menor peso informado
-
+    alert("O menor peso apresentado foi " + menorPeso);
 }
 
-//18. Criar uma função exercicio18()
-//- Solicitar o nome e a idade de 5 pessoas
-//- Descobrir quem possui a maior idade utilizando while
-//- Apresentar o nome da pessoa e a idade dela
+function exercicio18() {
+    let maiorIdade = 0;
+    let nomeVelho = "";
 
-//19. Criar uma função exercicio19()
-//- Solicitar o preço de 6 produtos
-//- Descobrir o maior preço utilizando while
-//- Descobrir o menor preço utilizando while
-//- Apresentar o maior e o menor preço informados
+    //- Solicitar o nome e a idade de 5 pessoas
+    let nome1 = parseFloat(prompt("Digite o nome da primeira pessoa"));
+    let idade1 = parseFloat(prompt("Digite a idade da primeira pessoa"));
+
+    // até este ponto, a pessoa de maior idade é a pessoa 1
+    nomeVelho = nome1;
+    maiorIdade = idade1;
+
+    let nome2 = parseFloat(prompt("Digite o nome da primeira pessoa"));
+    let idade2 = parseFloat(prompt("Digite a idade da primeira pessoa"));
+
+    let nome3 = parseFloat(prompt("Digite o nome da primeira pessoa"));
+    let idade3 = parseFloat(prompt("Digite a idade da primeira pessoa"));
+
+    let nome4 = parseFloat(prompt("Digite o nome da primeira pessoa"));
+    let idade4 = parseFloat(prompt("Digite a idade da primeira pessoa"));
+
+    let nome5 = parseFloat(prompt("Digite o nome da primeira pessoa"));
+    let idade5 = parseFloat(prompt("Digite a idade da primeira pessoa"));
+
+    //- Descobrir quem possui a maior idade utilizando while
+    while (maiorIdade == idade1) {
+
+        if (maiorIdade < idade2) {
+            maiorIdade = idade2;
+            nomeVelho = nome2;
+        }
+        if (maiorIdade < idade3) {
+            maiorIdade = idade3;
+            nomeVelho = nome3;
+        }
+        if (maiorIdade < idade4) {
+            maiorIdade = idade4;
+            nomeVelho = nome4;
+        }
+        if (maiorIdade < idade5) {
+            maiorIdade = idade5;
+            nomeVelho = nome5;
+        }
+    }
+    //- Apresentar o nome da pessoa e a idade dela
+    alert("A idade e o nome da pessoa mais velha apresentada foram: " + maiorIdade + nomeVelho);
+}
+
+function exercicio19() {
+    //- Solicitar o preço de 6 produtos
+    
+    //- Descobrir o maior preço utilizando while
+    //- Descobrir o menor preço utilizando while
+    //- Apresentar o maior e o menor preço informados
+
+}
 
 //20. Criar uma função exercicio20()
 //- Solicitar o nome e o valor do salário de 4 colaboradores
