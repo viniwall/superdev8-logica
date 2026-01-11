@@ -408,10 +408,14 @@ function exercicio16() {
 
 }
 
-//17. Criar uma função exercicio17()
-//- Solicitar o peso de 4 pessoas
-//- Descobrir e armazenar o menor peso utilizando while
-//- Apresentar o menor peso informado
+function exercicio17() {
+    let menorPeso = 0;
+    //- Solicitar o peso de 4 pessoas
+    let peso1 = parseFloat(prompt("Digite o primeiro peso:"));
+    //- Descobrir e armazenar o menor peso utilizando while
+    //- Apresentar o menor peso informado
+
+}
 
 //18. Criar uma função exercicio18()
 //- Solicitar o nome e a idade de 5 pessoas
