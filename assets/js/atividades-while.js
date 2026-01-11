@@ -338,31 +338,75 @@ function exercicio15 () {
     //- Solicitar 4 valores de contas (água, luz, internet, aluguel) utilizando enquanto
     while (indice < 4) {
         indice = indice + 1;
-        if (indice = 1) {
+
+        if (indice == 1) {
             contasValor = parseFloat(prompt("Insira sua conta de água"));
+            //- Calcular o total das contas
             contas = contas + contasValor;
-        } else if (indice = 2) {
+        } else if (indice == 2) {
             contasValor = parseFloat(prompt("Insira sua conta de luz"));
             contas = contas + contasValor;
-        } else if (indice = 3) {
-            contas = contas + contasValor;
+        } else if (indice == 3) {
             contasValor = parseFloat(prompt("Insira sua conta de internet"));
-        } else if (indice = 4) {
             contas = contas + contasValor;
+        } else if (indice == 4) {
             contasValor = parseFloat(prompt("Insira seu aluguel"));
+            contas = contas + contasValor;
         }
     }
-    //- Calcular o total das contas
     //- Solicitar a renda mensal do usuário
+    let rendaMensal = parseFloat(prompt("Insira sua renda mensal"));
     //- Se o total das contas for maior que 50% da renda apresentar mensagem Orçamento comprometido
+    if (contas > (rendaMensal/2)) {
+        alert("Orçamento comprometido")
+    }
     //- Senão apresentar mensagem Orçamento saudável
+    else {
+        alert("Orçamento saudável")
+    }
     //- Apresentar o total das contas e o percentual que representa da renda
+    alert("O total das contas mensais foi de: " + contas + " que representa %" + ((contas * 100) / rendaMensal))
 }
 
-//16. Criar uma função exercicio16()
-//- Solicitar a altura de 5 pessoas
-//- Descobrir e armazenar a maior altura utilizando while
-//- Apresentar a maior altura informada
+function exercicio16() {
+    let maiorAltura = 0;
+
+    //- Solicitar a altura de 5 pessoas
+    altura1 = parseFloat(prompt("Insira a altura da primeira pessoa:"))    
+    // até este momento, altura1 é o maior valor digitado, pois os outros não existem
+    maiorAltura = altura1;
+    let altura2 = parseFloat(prompt("Insira a altura da segunda pessoa:"))
+    let altura3 = parseFloat(prompt("Insira a altura da terceira pessoa:"))
+    let altura4 = parseFloat(prompt("Insira a altura da quarta pessoa:"))
+    let altura5 = parseFloat(prompt("Insira a altura da quinta pessoa:"))
+    
+    //- Descobrir e armazenar a maior altura utilizando while
+    while (maiorAltura == altura1) {
+        // comparação da altura inicial com as outras para mudança da maior altura
+        if (maiorAltura < altura2) {
+            maiorAltura = altura2;
+        }  
+        
+        if (maiorAltura < altura3) {
+            maiorAltura = altura3;
+        }  
+        
+        if (maiorAltura < altura4) {
+            maiorAltura = altura4;
+        }  
+        
+        if (maiorAltura < altura5) {
+            maiorAltura = altura5;
+        } 
+        
+        else {
+            break;
+        }
+    }
+    //- Apresentar a maior altura informada
+    alert("A maior altura inserida é: " + maiorAltura)
+
+}
 
 //17. Criar uma função exercicio17()
 //- Solicitar o peso de 4 pessoas
