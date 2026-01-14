@@ -399,6 +399,7 @@ function exercicio16() {
             maiorAltura = altura5;
         } 
         
+        // uso de break caso a altura1 continue sendo a maior altura
         else {
             break;
         }
@@ -426,6 +427,9 @@ function exercicio17() {
         }
         if (menorPeso > peso4) {
             menorPeso = peso4;
+        }
+        else {
+            break;
         }
     } 
     //- Apresentar o menor peso informado
@@ -475,24 +479,117 @@ function exercicio18() {
             maiorIdade = idade5;
             nomeVelho = nome5;
         }
+        else {
+            break;
+        }
     }
     //- Apresentar o nome da pessoa e a idade dela
     alert("A idade e o nome da pessoa mais velha apresentada foram: " + maiorIdade + nomeVelho);
 }
 
 function exercicio19() {
-    //- Solicitar o preço de 6 produtos
-    
-    //- Descobrir o maior preço utilizando while
-    //- Descobrir o menor preço utilizando while
-    //- Apresentar o maior e o menor preço informados
+    let maiorPreco = 0;
+    let menorPreco = 0;
 
+    //- Solicitar o preço de 6 produtos
+    let produto1 = parseFloat(prompt("Insira o preço do primeiro produto:"));
+
+    maiorPreco = produto1;
+    menorPreco = produto1;
+
+    let produto2 = parseFloat(prompt("Insira o preço do segundo produto:"));
+    let produto3 = parseFloat(prompt("Insira o preço do terceiro produto:"));
+    let produto4 = parseFloat(prompt("Insira o preço do quarto produto:"));
+    let produto5 = parseFloat(prompt("Insira o preço do quinto produto:"));
+    let produto6 = parseFloat(prompt("Insira o preço do sexto produto:"));
+
+    //- Descobrir o maior preço utilizando while
+    while(maiorPreco == produto1) {
+        if (maiorPreco < produto2) {
+            maiorPreco = produto2;
+        }
+        if (maiorPreco < produto3) {
+            maiorPreco = produto3;
+        }
+        if (maiorPreco < produto4) {
+            maiorPreco = produto4;
+        }
+        if (maiorPreco < produto5) {
+            maiorPreco = produto5;
+        }
+        if (maiorPreco < produto6) {
+            maiorPreco = produto6;
+        }
+        else {
+            break;
+        }
+    }
+    //- Descobrir o menor preço utilizando while
+    while(menorPreco == produto1) {
+        if (menorPreco > produto2) {
+            menorPreco = produto2;
+        }
+        if (menorPreco > produto3) {
+            menorPreco = produto3;
+        }
+        if (menorPreco > produto4) {
+            menorPreco = produto4;
+        }
+        if (menorPreco > produto5) {
+            menorPreco = produto5;
+        }
+        if (menorPreco > produto6) {
+            menorPreco = produto6;
+        }
+        else {
+            break;
+        }
+    }
+    //- Apresentar o maior e o menor preço informados
+    alert("O maior preço apresentado é de: " + maiorPreco + "\ne o menor preço apresentado é de: " + menorPreco);
 }
 
-//20. Criar uma função exercicio20()
-//- Solicitar o nome e o valor do salário de 4 colaboradores
-//- Descobrir qual colaborador tem o maior salário utilizando while
-//- Apresentar o nome do colaborador e o salário dele
+function exercicio20() {
+    let maiorSalario = 0;
+    let nomeRico = "";
+
+    //- Solicitar o nome e o valor do salário de 4 colaboradores
+    let nome1 = parseFloat(prompt("Insira o nome do primeiro funcionário"));
+    let salario1 = parseFloat(prompt("Insira o valor do primeiro salário"));
+
+    maiorSalario = salario1;
+    nomeRico = nome1;
+
+    let nome2 = parseFloat(prompt("Insira o nome do primeiro funcionário"));
+    let salario2 = parseFloat(prompt("Insira o valor do primeiro salário"));    
+
+    let nome3 = parseFloat(prompt("Insira o nome do primeiro funcionário"));
+    let salario3 = parseFloat(prompt("Insira o valor do primeiro salário")); 
+
+    let nome4 = parseFloat(prompt("Insira o nome do primeiro funcionário"));
+    let salario4 = parseFloat(prompt("Insira o valor do primeiro salário"));  
+      
+    //- Descobrir qual colaborador tem o maior salário utilizando while
+    while(maiorSalario == salario1) {
+        if (maiorSalario < salario2) {
+            maiorSalario = salario2;
+            nomeRico = nome2;
+        }
+        if (maiorSalario < salario3) {
+            maiorSalario = salario3;
+            nomeRico = nome3;
+        }
+        if (maiorSalario < salario4) {
+            maiorSalario = salario4;
+            nomeRico = nome4;
+        }
+        else {
+            break;
+        }
+    }
+    //- Apresentar o nome do colaborador e o salário dele
+    alert("O maior salário é de: " + maiorSalario + " do funcionário " + nomeRico);
+}
 
 //21. Criar uma função exercicio21()
 //- Solicitar a temperatura de 7 dias
