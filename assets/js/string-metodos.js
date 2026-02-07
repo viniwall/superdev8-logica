@@ -306,13 +306,6 @@ function vetorEFor2() {
     alert(textoFinal + "\nMaior preço: " + maiorPreco + "\nNome do produto de menor preço" + menorPrecoNome);
 }
 
-function variavelInvertida() {
-    x = 4;
-    y = 2;
-    
-   
-}
-
 function fibonacci() {
     let a = 1;
     let b = 1;
