@@ -174,3 +174,155 @@ function padEnd() {
     let linha = nome.padEnd(30, " ") + idade.toString().padEnd(3, " ") + salario.toString().padEnd(10, " ");
     alert(`Linha do CSV: '${linha}'`);
 }
+
+function exemploCorTintas() {
+    let tintas = [];
+
+    for (let i = 0; i < 5; i += 1) {
+        let nomeTinta = prompt("Insira o nome da tinta");
+        tintas.push(nomeTinta);
+    }
+
+    for (let i = 0; i < 5; i += 1){
+        texto += tintas[i] + "\n";
+    }
+    alert("Tintas:\n" + texto);
+}
+
+function alunos() {
+    let alunos = [];
+    
+    for(let i = 0;i < 13;i += 1){
+        let nomeAluno = prompt("Digite o nome do aluno");
+        alunos.push(nomeAluno);
+
+    }
+    
+    alert("Qtd de alunos: " + alunos.length);
+
+    let resultado = "";
+
+    for(let i = 0;i < 13;i += 1){
+        resultado += alunos[i] + "\n";
+    }
+    alert(resultado);
+
+    let menorNomeAluno = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+
+    for(let i = 0;i < 13;i += 1){
+        let nomeAlunoPercorrido = alunos[i];
+        if(nomeAlunoPercorrido.length < menorNomeAluno.length) {
+            menorNomeAluno = nomeAlunoPercorrido;
+        }
+    }5
+
+    alert("Aluno com menor nome: " + menorNomeAluno);
+}
+
+function exercicio1() {
+    
+    let smartphones = [];
+    let quantidadeEstoque = [];
+    let estoqueEstado = [];
+    let precoUnitario = [];
+    let menorQuantidade = 999999999999999999999999999;
+    let maiorQuantidade = 0;
+    let nomeDoMaior = "";
+
+    debugger
+    for(let i = 0;i < 5;i += 1) {
+        let nomeSmartphones = prompt("Digite o nome dos smartphones");
+        let estoque = prompt("insira o estoque");
+        let precos = prompt("Insira o preço do produto");
+        if (estoque > 7) {
+            estoqueEstado.push("(Elevado)");
+        } else if (estoque <= 7 && estoque > 4) {
+            estoqueEstado.push("(Estável)");
+        } else if (estoque <= 4 && estoque > 1) {
+            estoqueEstado.push("(Preocupante)");
+        } else if (estoque <= 1) {
+            estoqueEstado.push("(Urgente)");
+        } 
+        if(estoque < menorQuantidade) {
+            menorQuantidade = estoque;
+        } 
+        if(estoque > maiorQuantidade) {
+            maiorQuantidade = estoque
+            nomeDoMaior = nomeSmartphones
+        }
+        quantidadeEstoque.push(estoque);
+        smartphones.push(nomeSmartphones);
+        precoUnitario.push(precos);
+    }
+
+    let resultado = "";
+    // precoUnitario.padStart((precoUnitario.length + 2), "R$");
+    
+    for(let i = 0;i < 5;i += 1) {
+        resultado += smartphones[i] + ", " + quantidadeEstoque[i] + estoqueEstado[i] + ", " + precoUnitario[i] + "\n";
+    }
+
+    alert("O nome dos smartphones com seu estoque são: \n" + resultado + "\nMenor quantidade no estoque: " + menorQuantidade + "\nNome do smartphone de maior estoque: " + nomeDoMaior);
+}
+
+function vetorEFor2() {
+    let produtos = [];
+    let categoria = [];
+    let preco = [];
+    let desconto = [];
+    let precoFinal = [];
+    let maiorPreco = 0;
+    let menorPreco = 9999999999;
+    let menorPrecoNome = "";
+
+    for(let i = 1;i < 6;i += 1){
+        let nomeProdutos = parseFloat(prompt("insira o nome do " + i + "°" + " produto"));
+        let categoriaProdutos = parseFloat(prompt("insira a categoria do " + i + "°" + " produto"));
+        let precoProdutos = parseFloat(prompt("insira o preço do " + i + "°" + " produto"));
+        let produtosDesconto = parseFloat(prompt("insira o desconto do " + i + "°" + " produto (se houver)"));
+        preco.push(precoProdutos);
+        produtos.push(nomeProdutos);
+        categoria.push(categoriaProdutos);
+        
+        if (produtosDesconto != null || produtosDesconto != 0) {
+            precoProdutosFinal = precoProdutos - (preco * desconto / 100);
+            precoFinal.push(precoProdutos)
+        }
+        if (precoProdutos > maiorPreco) {
+            maiorPreco = precoProdutos;
+        }
+        if (precoProdutos < menorPreco) {
+            menorPreco = precoProdutos;
+            menorPrecoNome = nomeProdutos;
+        }
+    }
+
+    let textoFinal = "";
+
+    for(let i = 0;i < 5;i += 1){
+        textoFinal = "Nome do produto: " + produtos[i] + " | " + "preco: " + preco[i] + " | " + "Classificação: " + categoria[i] + "\n";
+    }
+
+    alert(textoFinal + "\nMaior preço: " + maiorPreco + "\nNome do produto de menor preço" + menorPrecoNome);
+}
+
+function variavelInvertida() {
+    x = 4;
+    y = 2;
+    
+   
+}
+
+function fibonacci() {
+    let a = 1;
+    let b = 1;
+    let c = 0;
+    for(let i = 0;i < 5;i += 1){
+        c = a + b;
+        alert(a + " + " + b + " = " + c);
+        if (c > b) {
+            a = b
+            b = c;
+        }
+    }
+}
